@@ -19,5 +19,11 @@ public class MapDemo {
     for (Entry<Integer, String> e : hashMap.entrySet()){
       System.out.println(e.getKey() + " " + e.getValue());
     }
+
+    // Using key Set (getting the keys of a HashMap as a Set)
+    Set<Integer> keys = hashMap.keySet();
+    for(Integer k : keys ){
+      System.out.println(k + ": " + hashMap.get(k));
+    }
   }
 }
