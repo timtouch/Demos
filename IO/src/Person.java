@@ -4,8 +4,8 @@ import java.io.Serializable;
 // itself is empty but notifies the compilier that the object is ready for serialization
 public class Person implements Serializable {
   private static final long serialVersionUID = 1l;
-  private String name;
-  private int age;
+  private String name = "Joe";
+  private int age = 80;
 
   public Person() {}
 
